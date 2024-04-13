@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+}
+
+header img{
+    width:60px;
+    position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+}
+
+header ul{
+ cursor: pointer;
+  color: white;
+  display: flex;
+  gap:10px;
+  margin-right: 70px;
+  list-style: none;
+  font-family: "New Rocker", system-ui;
+  transition: all 0.4s;
+}
+header ul li:hover{
+     color: red;
+     background: white;
+   }
+
+header ul:nth-child(1) li:hover{
+    color:white;
+    background: red;
+  }
+
+header ul:nth-child(1){
+    margin-left: 70px;
+    color: red;
+  }
+
+header ul li{
+ transition: all 0.4s;
+padding: 5px 10px;
+border-radius: 100%;
+ background: rgba(255, 255, 255, 0.09);
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 1.1);
+ backdrop-filter: blur(5.6px);
+ -webkit-backdrop-filter: blur(5.6px);
+ border: 1px solid rgba(255, 255, 255, 0.66);
+}
+
+.nav{
+ position: absolute;
+ min-width: 100%;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-image: url(./imaGES/2.jpeg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.nav h1{
+    font-family: "New Rocker", system-ui;
+    font-weight: 100;
+    font-size: 6.5rem;
+    color: #06659F;
+    text-shadow: 1px 2px 1px white;
+}
+
+ span{
+    font-size: 7rem;
+    font-family: "Metal Mania", system-ui;
+    color: #FC1742;
+    letter-spacing: 10px;
+    margin-left: 10px;
+    text-shadow: 1px 2px 2px black;
+}
+
+.nav #dropdown{
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    color: black;
+    font-family: "Metal Mania", system-ui;
+    font-size: 1.3em;
+    border-radius: 5px;
+  }
